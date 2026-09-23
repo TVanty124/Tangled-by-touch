@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tangled by Touch</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- p5.js and p5.sound are saved in this folder, so the page works offline.
+       if they are missing, load them from the internet instead. -->
+  <script src="fix-sound.js"></script>
+  <script src="p5.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script>
+    if (!window.p5) {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"><\/script>');
+    }
+  </script>
+  <script>
+    if (!window.p5 || !p5.SoundFile) {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"><\/script>');
+    }
+  </script>
+  <script src="sounds.js"></script>
+  <script src="story.js"></script>
+  <script src="hands.js"></script>
+  <script src="thread.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body>
+  <div id="about">
+    <div class="box">
+      <button id="closeAbout" class="btn">Close</button>
+      <h1>Tangled by Touch</h1>
+      <p>East Asia has an ancient story that describes an invisible red thread being draped between two individuals destined to meet and be together for the rest of their lives on earth.</p>
+      <p>The thread in this piece is not about the importance of connections between people. Instead, it is a sort of journal record of what you are doing. Your cursor functions as a needle, going through other threads and tying knots in them with each connection. The more you move around on your screen the more knots you make, and the more impossible it becomes to move at all.</p>
+      <p>What is the point at which a connection ceases to be meaningful and begins to be restrictive?</p>
+      <h2>How to play</h2>
+      <p>The user starts by holding the mouse to begin. Then the user slowly moves the cursor around on the screen to try to find the other person. The user then continues to move the cursor around to see what happens to the two threads. The user can then end the piece by either remaining still or holding the mouse.</p>
+      <p class="loop">more movement → more traces → more entanglement → less freedom</p>
+      <h2>Credits</h2>
+      <p class="small">Nguyen Thuy Tuong Van — OART1033, RMIT 2026<br>
+      Made with p5.js and p5.sound<br>
+      Fonts: Lora and IBM Plex Mono (SIL Open Font License)<br>
+      Music &amp; sound: Universfield, AlenGoa, Dragon Studio and freesound_community via Pixabay</p>
+    </div>
+  </div>
+</body>
+</html>
